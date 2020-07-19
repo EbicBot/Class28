@@ -18,7 +18,7 @@ function setup(){
     world = engine.world;
 
 
-    ground = new Ground(600,height,1200,20);
+    ground = new Ground(1200,height,1200,70);
     platform = new Ground(150, 305, 300, 170);
 
     box1 = new Box(700,320,70,70);
@@ -44,24 +44,13 @@ function setup(){
 }
 
 function draw(){
-    background(backgroundImg);
+    background(255);
     Engine.update(engine);
     strokeWeight(4);
     box1.display();
-    box2.display();
+    
     ground.display();
-    pig1.display();
-    log1.display();
-
-    box3.display();
-    box4.display();
-    pig3.display();
-    log3.display();
-
-    box5.display();
-    log4.display();
-    log5.display();
-
+  
     bird.display();
     platform.display();
     log6.display();
